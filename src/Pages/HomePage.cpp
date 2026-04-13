@@ -151,7 +151,6 @@ void HudPage::loop() {
     }
 
     drawStringButton(rightColCenterX, textY + offset * 2 - 1, "C", "", FONT_TEXT);
-    u8g2.setFont(FONT_TINY_TEXT);
 
     totalDrawTime = millis() - startTime;
 }
