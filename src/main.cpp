@@ -23,7 +23,7 @@ static void refreshPacketState(bool includeLiveSticks) {
         packet.steering = getSteerPWM();
     } else {
         packet.throttle = 1500;
-        packet.steering = 1500;
+        packet.steering = steerCtrPwm;
     }
 
     packet.version       = RC_PROTOCOL_VERSION;
